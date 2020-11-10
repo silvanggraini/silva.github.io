@@ -1,0 +1,427 @@
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.sidebar {
+    position: fixed;
+    width: 60px;
+    height: 620px;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(100, 148, 237, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0,0.03);
+}
+
+.sidebar .logo {
+    width: 12px;
+    height: 14px;
+    background-color: white;
+    padding: 14px;
+    margin: 35px 9px;
+    border-radius: 50%;
+    border: none;
+}
+
+.sidebar ul li {
+    display: block;
+    width: 30px;
+    line-height: 75px;
+    color: rgb(255, 255, 255);
+    padding-left: 3px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    position: absolute;
+    top: 200px;
+    left: -28px;
+    margin-top: 50px;
+    margin-left: 0;
+}
+
+.sidebar ul li a.fas {
+    width: 30px;   
+}
+
+.sidebar ul li a{
+    color: white;
+    transition: 0.3;
+}
+
+.sidebar ul li a :hover {
+    color: #40a8c4;
+}
+
+.middle {
+    position: absolute;
+    left: 90px;
+    top: 19px;
+    width: 790px;
+    height: 800px;
+    padding: 5px;
+    margin: 20px;
+    box-shadow: 4px -4px 3px rgba(0, 0, 0, 0.07);
+}
+
+ h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: -8px;
+    left: 120px;
+}
+
+.middle .sapa{
+    width: 700px;
+    background-color:rgba(100, 148, 237, 0.2);
+    padding: 1px 15px;
+    border-radius: 10px;
+}
+
+.middle .sapa h2 {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 8px 2px;
+    color: black;
+}
+
+.middle .sapa p {
+    font-family: sans-serif;
+    word-spacing: 3px;
+    font-size: 14px;
+    margin: 2px 2px 8px 2px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.middle .Gambar{
+    width: 490px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.middle ul li{
+    display: inline-block;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.04);
+    margin: 40px;
+    padding: 0 4px 8px 4px;
+    border-radius: 10px;
+    transform: translate(-8%,-8%);
+    transition: 0.3s;
+}
+
+.middle ul li:hover{
+    transform: scale(1.5);
+}
+
+.middle ul li .class,
+.middle ul li .Book,
+.middle ul li .Assignment{
+    width: 140px;
+}
+
+.middle .task{
+    width: 100%px;
+    position: relative;
+    top: 30px;
+    left: 60px;
+    background-color: rgb(100, 148, 237, 0.2);
+    border-radius: 8px;
+}
+
+.middle .task h3{
+    position: relative;
+    top: -25px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.middle .task {
+    margin-left: -30px;
+    width: 700px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.middle .task img{
+    position: relative;
+    top: -25px;
+    left: 10px;
+    margin: 0px;
+    width: 32px;
+}
+
+.middle .task h4{
+    font-size: 14px;
+    position: relative;
+    top: -70px;
+    left: 50px;
+}
+
+.middle .task span{
+    font-size: 14px;
+    position: relative;
+    top: -101px;
+    left: 400px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.middle .task p{
+    font-size: 14px;
+    position: relative;
+    top: -132px;
+    left: 500px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.kanan {
+    width: 430px;
+    height: 100%;
+    position: absolute;
+    top: 150px;
+    right: 130px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.kanan .photo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -140px;
+    right: -110px;
+    border-radius: 50%;
+    border: 2px solid #40a8c4;
+}
+
+.kanan .notification{
+    width: 70px;
+    position: absolute;
+    top: -120px;
+    right: -60px;
+}
+
+.kanan .calender{
+    position: relative;
+    top: -90px;
+    right: -130px;
+    width: 300px;
+    height: auto;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.calender .date{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.calender .date div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-size: 14px;
+}
+
+.calender .date div.day{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+}
+
+.calender .date div.day:first-child,
+.calender .date div.number:nth-child(7n + 1){
+    color: #ff1100;
+    font-weight: 700;
+}
+
+.calender .date div.number.active,
+.calender .date div.number:hover{
+    background-color: darkorange;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.calender .judul{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 30px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.kanan .timeline{
+    position: relative;
+    top: 0px;
+    right: 0;
+    width: 430px;  
+}
+
+.kanan .timeline ul li{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.kanan .timeline ul li.satu {
+    width: 300px;
+    height: 60px;
+    list-style: none;
+    background-color: rgba(95, 158, 160, 0.2);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.kanan .timeline ul li .ka1 span{
+    position: relative;
+    top: 19px;
+    right: 50px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 5px 24px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color:  rgba(95, 158, 160, 0.2);
+}
+
+.kanan .timeline ul li .ki1 span{
+    position: relative;
+    top:-145px;
+    right: -137px;
+    font-size: 13px;
+}
+
+.kanan .timeline ul li.dua {
+    width: 300px;
+    height: 60px;
+    list-style: none;
+    background-color: rgba(255, 153, 0, 0.3);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.kanan .timeline ul li .ka2 span{
+    position: relative;
+    top: 19px;
+    right: 50px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 5px 24px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color:  rgba(255, 153, 0, 0.3);
+}
+
+.kanan .timeline ul li .ki2 span{
+    position: relative;
+    top:-145px;
+    right: -137px;
+    font-size: 13px;
+}
+
+.kanan .timeline ul li.tiga {
+    width: 300px;
+    height: 60px;
+    list-style: none;
+    background-color: rgba(61, 61, 61, 0.07);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.kanan .timeline ul li .ka3 span{
+    position: relative;
+    top: 19px;
+    right: 50px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 5px 24px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color:  rgba(61, 61, 61, 0.07);
+}
+
+.kanan .timeline ul li .ki3 span{
+    position: relative;
+    top:-145px;
+    right: -137px;
+    font-size: 13px;
+}
+
+.kanan .timeline ul li.empat {
+    width: 300px;
+    height: 60px;
+    list-style: none;
+    background-color: rgba(255, 0, 0, 0.08);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.kanan .timeline ul li .ka1,
+.kanan .timeline ul li .ka2,
+.kanan .timeline ul li .ka3,
+.kanan .timeline ul li .ka4{
+    height: 60px;
+    width: 25%;
+}
+
+.kanan .timeline ul li .ka4 span{
+    position: relative;
+    top: 19px;
+    right: 50px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 5px 24px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color:  rgba(255, 0, 0, 0.08);
+}
+
+.kanan .timeline ul li .ki1 img,
+.kanan .timeline ul li .ki2 img,
+.kanan .timeline ul li .ki3 img,
+.kanan .timeline ul li .ki4 img{
+    width: 70px;
+    position: relative;
+    top: -60px;
+    right: -70px;
+}
+
+.kanan .timeline ul li .ki1 p,
+.kanan .timeline ul li .ki2 p,
+.kanan .timeline ul li .ki3 p,
+.kanan .timeline ul li .ki4 p{
+    position: relative;
+    top:-135px;
+    right: -136px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.kanan .timeline ul li .ki4 span{
+    position: relative;
+    top:-145px;
+    right: -137px;
+    font-size: 13px;
+}
