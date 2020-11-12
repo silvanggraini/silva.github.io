@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="signup.css">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signUp.css">
 </head>
 <body>
-    <div class="kiri">
+    <div class="header">
        <img src="logoweb.png" alt="logo" class="logo">
        <nav>
            <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About Us</a></li>
-               <li><a href="#">Contact Us</a></li>
+               <li><a href="Depan.html">Home</a></li>
+               <li><a href="AboutUs.html">About Us</a></li>
+               <li><a href="ContactUs.html">Contact Us</a></li>
            </ul>
        </nav>
+    </div>
+    <div class="kiri">
        <form>
-            <input class="SignUp" type="button" value="Sign Up" >
-            <input class="Login" type="button" value="Login" >
+            <a href="sign_up.html" class="SignUp">Sign Up</a>
+            <a href="login.html" class="Login">Login</a>
             <div class="textbox">
                 <input type="text" placeholder="Username">
+                <br>
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <br>
+                <input type="password" placeholder="Password"> 
             </div>
-            <input class="tombol" type="button" value="Get Started">
-            <p>Already have an account?<a href="#"> Sign In</a></p>
+            <button type="submit"><a href="home.html">Get Started</a></button>
+            <p>Already have an account?<a href="login.html"> Sign In</a></p>
         </form>
-   </div>
+    </div>
    <div class="kanan">
-       <img src="Humaaans - 1 Character.png" class="Gambar">
+       <img src="icon/example-scene-1.png" class="Gambar">
    </div>
 </body>
 </html>
