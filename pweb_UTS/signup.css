@@ -1,125 +1,116 @@
-body {
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
     background-color: rgb(100, 148, 237, 0.1);
 }
 
-.kiri {
-    width: 40%;
-    position: absolute;
+.header{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 0px;
 }
 
-.logo {
-    width: 70px;
-    cursor: pointer;
-    padding: 20px;
-    margin-top: 24px;
-    position: relative
-    ;
+.header img{
+    width: 60px;
+    padding: 10px 10px 10px 30px;
+    margin: 7px 50px;
 }
 
-nav {
-    margin-left: 115px;
-    float: right;
-    position: absolute;
-    left: 20px;
-    top: 30px;
-}
-
-nav ul li {
+.header nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 0 20px; 
+    position: relative;
+    top: -55px;
+    left: 120px;
+    margin: 0px 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: rgb(31, 30, 30, 0.8);
+.header nav ul li a{
+    font-size: 14px;
     font-family: sans-serif;
-    font-size: 13px;
+    text-decoration: none;
+    color: black;
 }
 
-form {
-    height: 90%;
-    width: 60%;
-    margin-left: 145px;
-    margin-top: 70px;
+.kiri{
+    width: 40%;
+    height: 70%;
+    position: relative;
+    top: 130px;
+    left: 200px;
 }
 
-.textbox {
+.kiri form .SignUp{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0px 40px 10px 0px;
+    color: #40a8c4;
+    border-bottom: 2px solid #40a8c4;
+    padding-bottom: 5px;
+}
+
+.kiri form .Login:hover{
+    color: #40a8c4;
+}
+
+.kiri form .Login{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0px 40px 10px 120px;
+    color: rgb(107, 107, 107,0.5);
+}
+
+.kiri form .textbox{
+    position: relative;
+    left: -10px;
     width: 100%;
-    font-size: 18px;
-    padding: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 10px 0px;
+    margin:  5px 0;
 }
 
-.textbox input{
-    width: 100%;
+.kiri form input{
+    width: 300px;
+    padding: 9px 16px;
+    margin:  12px 0;
     outline: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
     border-radius: 20px;
     border: 1px solid #eaeaea;
-    box-shadow: #d66e2d;
+    box-shadow: 0px 3px 3px rgba(204, 204, 204, 0.4);
 }
 
-.SignUp {
-    width: 70px;
-    height: 30px;
-    outline: none;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: sans-serif;
-    background-color: rgb(100, 148, 237, 0.01);
-    color: #40a8c4;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid #40a8c4;
-    margin: 0 40px;
-    cursor: pointer;
+.kiri form button{
     position: relative;
-}
-
-.Login {
-    width: 70px;
-    height: 30px;
-    outline: none;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: sans-serif;
-    background-color: rgb(100, 148, 237, 0.01);
-    color: rgb(31, 30, 30, 0.4);
-    border: none;
-    margin: 0 0 0 80px;
-    cursor: pointer;
-    position: relative;
-}
-
-.tombol{
-    width: 105px;
-    padding: 8px;
-    outline: none;
-    font-size: 16px;
-    font-family: sans-serif;
+    left: 95px;
+    padding: 10px;
+    width: 120px;
     background-color: #40a8c4;
-    color: white;
     border: none;
-    margin: 10px 0 7px 125px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 3px 3px 5px rgba(90, 90, 90, 0.6);
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgb(64, 168, 196, 0.4);
 }
 
-p {
+.kiri form a{
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.kiri form p{
     font-size: 15px;
     font-family: sans-serif;
     text-align: center;
-    margin-left: 30px;
-    color: rgb(82, 80, 80);
+    margin-left: -230px;
+    color: rgb(82, 80, 80)
 }
 
-p a {
+.kiri form p a{
     font-size: 15px;
     font-family: sans-serif;
     text-decoration: none;
@@ -127,20 +118,10 @@ p a {
     color: #40a8c4;
 }
 
-.kanan {
-    width: 40%;
-    padding-left: 120px;
-    position: absolute;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    right: 30px;
-    top: 10px; 
+.kanan img{
+    width: 650px;
+    position: relative;
+    top: -375px;
+    right: -660px;
 }
 
-.Gambar {
-    width: 85%;
-    position: absolute;
-    top: 80px;
-    right: 100px;
-    rotate: 90%;
-}
