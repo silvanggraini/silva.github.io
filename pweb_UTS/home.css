@@ -28,7 +28,7 @@ body {
 .sidebar ul li {
     display: block;
     width: 30px;
-    line-height: 75px;
+    line-height: 85px;
     color: rgb(255, 255, 255);
     padding-left: 3px;
     margin-left: 10px;
@@ -61,10 +61,11 @@ body {
     left: 90px;
     top: 19px;
     width: 790px;
-    height: 800px;
+    height: 700px;
+    overflow:hidden;
     padding: 5px;
     margin: 20px;
-    box-shadow: 4px -4px 3px rgba(0, 0, 0, 0.07);
+    box-shadow: 4px -4px 3px rgba(126, 126, 126, 0.07);
 }
 
  h1 {
@@ -122,62 +123,6 @@ body {
 .middle ul li .Book,
 .middle ul li .Assignment{
     width: 140px;
-}
-
-.middle .task{
-    width: 100%px;
-    position: relative;
-    top: 30px;
-    left: 60px;
-    background-color: rgb(100, 148, 237, 0.2);
-    border-radius: 8px;
-}
-
-.middle .task h3{
-    position: relative;
-    top: -25px;
-    left: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: sans-serif;
-}
-
-.middle .task {
-    margin-left: -30px;
-    width: 700px;
-    height: 50px;
-    box-sizing: border-box;
-}
-
-.middle .task img{
-    position: relative;
-    top: -25px;
-    left: 10px;
-    margin: 0px;
-    width: 32px;
-}
-
-.middle .task h4{
-    font-size: 14px;
-    position: relative;
-    top: -70px;
-    left: 50px;
-}
-
-.middle .task span{
-    font-size: 14px;
-    position: relative;
-    top: -101px;
-    left: 400px;
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.middle .task p{
-    font-size: 14px;
-    position: relative;
-    top: -132px;
-    left: 500px;
-    color: rgba(0, 0, 0, 0.4);
 }
 
 .kanan {
