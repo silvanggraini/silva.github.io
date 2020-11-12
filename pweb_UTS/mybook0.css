@@ -115,6 +115,20 @@ body{
     width: 21px;
 }
 
+
+.sidebar a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+.sidebar img{
+    width: 18px;
+    margin-left: 10px;
+}
+
 .tengah {
     position: relative;
     top: 30px;
@@ -160,7 +174,6 @@ body{
     transition: 0.3s;
 }
 
-body .tengah ul li .active,
 .tengah ul li:hover{
     background-color: rgba(100, 148, 237, 0.2);
     border-left: 3px solid #40a8c4;
@@ -188,40 +201,49 @@ body .tengah ul li .active,
 .isi {
     width: 750px;
     height: 100%;
-    padding: 20px;
     position: fixed;
     top: 70px;
     right: 15px;
     background-color: white;
     border-radius: 14px;
     box-shadow: 0 0 3px 3px rgb(79, 79, 80,0.08);
-    overflow: scroll;
-    box-sizing: border-box;
-}
-
-.isi h3{
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 700;
-    text-align: center;
-}
-
-.isi h4{
-    font-size: 14px;
-    font-family: sans-serif;
-    font-weight: 500;
-}
-
-.isi p{
-    font-size: 13px;
-    font-family: sans-serif;
-    padding-bottom: 5px;
 }
 
 .isi img{
-    position: fixed;
-    width: 50px;
-    bottom: 10px;
-    right: 30px;
+    width: 300px;
+    position: relative;
+    top: 130px;
+    left: 230px;
 }
 
+.isi ul li{
+    width: 130px;
+    height: 25px;
+    background-color: white;
+    list-style: none;
+    display: block;
+    margin: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    position: relative;
+    top: 105px;
+    left: 270px;
+    box-shadow: 3px 3px 3px rgba(173, 173, 173, 0.5);
+}
+
+.isi ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+    left: 0px;
+    top: -13px;
+}
+
+.isi ul li img{
+    width: 30px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
