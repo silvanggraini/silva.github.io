@@ -115,6 +115,20 @@ body{
     width: 21px;
 }
 
+
+.sidebar a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+.sidebar img{
+    width: 18px;
+    margin-left: 10px;
+}
+
 .tengah {
     position: relative;
     top: 30px;
