@@ -6,11 +6,11 @@ body{
 
 .header{
     position: fixed;
-    top: 10px;
+    top: 0px;
     right: 0px;
     width: 100%;
     height: 50px;
-    background-color: rgba(100, 148, 237, 0.2);
+    background-color: #40a8c4;
     box-shadow: 0 3px 3px  rgba(100, 148, 237, 0.2);
     z-index: 999;
 }
@@ -31,7 +31,7 @@ body{
     left: 250px;
     width: 150px;
     height: 25px;
-    border:2px solid #40a8c4;
+    border:1.5px solid #40a8c4;
     border-radius: 15px;
     background-color: white;
 }
@@ -85,7 +85,7 @@ body{
     left: -25px;
     top: 60px;
     width: 200px;
-    height: 36px;
+    height: 33px;
     margin: 10px;
     list-style: none;
     border-radius: 30px;
@@ -96,30 +96,37 @@ body{
     background-color: #40a8c4;
 }
 
+.sidebar ul li a:hover{
+    color: white;
+}
+
 .sidebar ul li a{
     font-size: 14px;
     font-family: sans-serif;
     text-decoration: none;
-    color: black;
+    color: rgb(59, 59, 59);
     font-weight: 700;
+    transition: 0.3s;
 }
 
 .sidebar ul li img{
-    width: 20px;
+    position: relative;
+    top: 5px;
+    width: 21px;
 }
+
 
 .sidebar a{
     text-decoration: none;
-    font-size: 24px;
+    font-size: 14px;
     font-family: sans-serif;
     color: black;
     font-weight: 700;
 }
 
 .sidebar img{
-    width: 20px;
-    margin-left: 20px;
-    
+    width: 18px;
+    margin-left: 10px;
 }
 
 .tengah {
