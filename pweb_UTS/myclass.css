@@ -130,16 +130,16 @@ body{
 }
 
 .tengah {
-    position: relative;
+    position: absolute;
     top: 10px;
-    left: 250px;
+    left: 260px;
     width: 300px;
     height: 100%;
 }
 
 .tengah h2{
-    margin-top: 60px;
-    font-size: 20px;
+    margin-top: 85px;
+    font-size: 25px;
     font-family: sans-serif;
     font-weight: 700;
 }
@@ -179,16 +179,15 @@ body{
     border-left: 3px solid #40a8c4;
 }
 
-.tengah ul li a{
+.tengah a{
     position: relative;
-    top: 4px;
-    left: 7px;
+    top: 0px;
+    left: 275px;
     padding: 5px;
-    font-size: 13px;
-    font-family: sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    color: black;
+}
+
+.tengah a img {
+    width: 100px;
 }
 
 .tengah ul li span{
@@ -197,65 +196,198 @@ body{
     color: rgb(63, 63, 63, 0.7);
     padding: 10px 0 5px 18px;
 }
-.Monday{
-    background: #FFC93c;
-    width : 20%;
-    border-collapse:collapse;
-    box-shadow: 0px 0px 0px 0px;
-    overflow: hidden;
-    border:5px solid #FFC93c;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-.Tuesday{
-    background: #FFC93c;
-    width : 20%;
-    border-collapse:collapse;
-    box-shadow: 0px 0px 0px 0px;
-    overflow: hidden;
-    border:5px solid #FFC93c;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 10px; 
 
-}
-.Wednesday{
-    background: #FFC93c;
-    width : 20%;
-    border-collapse:collapse;
-    box-shadow: 0px 0px 0px 0px;
-    overflow: hidden;
-    border:5px solid #FFC93c;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 10px; 
-}
-.zebra-table{
-    width : 120%;
-    border-collapse:collapse;
-    box-shadow: 0px 0px 2px 0px #40a8c4;
-    overflow: hidden;
-    border:5px solid #edf2f3
-} 
-.zebra-table th,.zebra-table td{
-    vertical-align: top;
-    padding: 10px 11px;
-    text-align: left;
-    margin: 0px;
-}
-.zebra-table tbody tr:nth-child(ood){/*
-    Make table like zebra */
-    background:#40a8c4;
-}/* End CSS for Zebra Table in myassignmen.html*/
+table{
+    width: 600px;
+    margin-top: 30px;
+ }
+ 
+ table th {
+     position: relative;
+     padding: 10px 30px 10px 10px;
+     border: 2px solid #FFC93c;
+     background-color: #FFC93c;
+     border-top-left-radius: 6px;
+     border-top-right-radius: 6px;
+ }
+
+ table td{
+     background-color: white;
+     padding-top: 10px;
+     text-align: center;
+ }
+
+ table td:hover{
+    background-color: rgb(64, 168, 196,0.1);
+ }
+ 
 
 .isi {
-    width: 650px;
+    width: 435px;
     height: 100%;
     position: fixed;
-    top: 70px;
-    right: 15px;
-    background-color: rgba(100, 148, 237, 0.2);
-    border-radius: 14px;
+    padding: 10px 10px;
+    top: 50px;
+    right: 0px;
+    background-color: white;
     box-shadow: 0 0 3px 3px rgb(79, 79, 80,0.08);
+    box-sizing: border-box;
+}
+
+.isi h1{
+    font-size: 23px;
+    padding-top: 20px;
+    font-family: sans-serif;
+}
+
+.isi h3{
+    position: relative;
+    top: -10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.timeline{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+.timeline ul li{
+    margin-bottom: 25px;
+    width: 350px;
+    height: 45px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+    left: 60px;
+    box-shadow: 3px 3px 3px rgba(156, 156, 156, 0.3);
+    padding: 3px;
+    list-style: none;
+}
+.timeline ul li:hover{
+    background-color: rgba(100, 148, 237, 0.2);
+
+}
+
+
+.timeline ul li h1{
+    text-align: center;
+    margin: 2px;
+    width: 40px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #ffc93c;
+    border-radius: 50%;
+}
+
+.timeline ul li h4{
+    font-weight: 100;
+    font-size: 13px;
+    font-family: sans-serif;
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+
+.timeline ul li span{
+    font-weight: 100;
+    font-size: 12px;
+    font-family: sans-serif;
+    position: relative;
+    top: -71px;
+    left: 50px;
+    color: rgb(126, 126, 126);
+}   
+
+.timeline ul li h5{
+    font-weight: 100;
+    font-size: 13px;
+    font-family: sans-serif;
+    position: relative;
+    top: -85px;
+    left: 200px;
+} 
+
+.timeline ul li p{
+    font-weight: 100;
+    font-size: 12px;
+    font-family: sans-serif;
+    position: relative;
+    top: -143px;
+    left: 190px;
+    color: rgb(126, 126, 126);
+} 
+
+.timeline ul li img{
+    width: 20px;
+    position: relative;
+    top: -124px;
+    left: 290px;
+}
+
+/* .tengah form{
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-left: 85px;
+    width: 420px; 
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 2px rgb(138, 136, 136,0.4);
+} */
+
+.tengah .form {
+    background-color: white;
+    margin-left: 85px;
+    width: 420px;    
+    font-family: sans-serif;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.tengah form label{
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-left: 40px;  
+}
+
+.tengah form #hari, .tengah form #mataKuliah, .tengah form #jam{
+    height: 25px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    border: 1.5px solid rgb(51, 50, 50,0.5);
+    border-radius: 5px;
+    outline: none;
+}
+
+.tengah form .bottom{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    background-color: rgb(64, 168, 196,0.8);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(114, 114, 114, 0.2);
+    cursor: pointer;
+    outline: none;
+}
+
+.tengah form .bottom:hover{
+    background-color: rgb(64, 168, 196);
 }
