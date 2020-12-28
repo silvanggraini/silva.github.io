@@ -91,3 +91,7 @@ function deleteData4(){
     confirm("Apakah anda yakin akan menghapus daftar ini") 
         document.querySelector('.Friday').deleteRow(1);
 }
+
+
+
+
