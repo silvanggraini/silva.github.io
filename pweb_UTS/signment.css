@@ -114,50 +114,68 @@ body{
     top: 5px;
     width: 21px;
 }
-.Wed{
-    background: #FFC93c;
-    width : 30%;
-    left: 100px;
-    border-collapse:collapse;
-    box-shadow: 0px 0px 0px 0px;
-    overflow: hidden;
-    border:5px solid #FFC93c;
-    margin-bottom: 5px;
-    margin-top: 15px;
-    margin-right: 5px;
-    margin-left: 10px;
-}
-.Mon{
-    background: #FFC93c;
-    width : 30%;
-    left: 100px;
-    border-collapse:collapse;
-    box-shadow: 0px 0px 0px 0px;
-    overflow: hidden;
-    border:5px solid #FFC93c;
-    margin-bottom: 5px;
-    margin-top: 15px;
-    margin-right: 0px;
-    
-}   
-.Sat{
-    background: #FFC93c;
-    width : 30%;
-    left: 100px;
-    border-collapse:collapse;
-    box-shadow: 0px 0px 0px 0px;
-    overflow: hidden;
-    border:5px solid #FFC93c;
-    margin-bottom: 12px;
-    margin-top: 15px;
-    margin-right: 15px;
-}
+
 .tengah {
     position: relative;
-    top: 100px;
-    left: 300px;
+    top: 60px;
+    left: 270px;
     width: 300px;
     height: 100%;
+}
+
+.tengah form{
+    width: 620px;
+    height: 370px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 0 3px 4px rgb(184, 184, 184, 0.09);
+    position: absolute;
+    top: 50px;
+}
+
+.tengah form input{
+    width: 500px;
+    height: 28px;
+    margin: 8px;
+    position: relative;
+    left: 20px;
+    border-radius: 4px;
+    border: 1.5px solid rgb(155, 155, 155);
+    outline: none;
+}
+
+.tengah form label{
+    width: 400px;
+    height: 25px;
+    margin: 8px;
+    position: relative;
+    left: 20px;
+}
+
+.tengah form .button, .tengah form .reset{
+    font-size: 16px;
+    position: relative;
+    top: -10px;
+    left: 15px;
+    width: 240px;
+    height: 40px;
+    background-color: #40a8c4;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+.tengah form .reset:hover{
+    background-color: #268daa;
+}
+
+.tengah form .button:hover{
+    background-color: #268daa;
 }
 
 .tengah h2{
@@ -169,77 +187,35 @@ body{
     font-weight: 500;
 }
 
-.tengah p{
-    margin-top: 20px;
-    background-repeat: no-repeat;
-    padding-left: 5px !important;
-    background-size: 300%;
-    background-position-y: 10%;
-    font-size: 10px;
-    font-family: sans-serif;
-    font-weight: 500px;
-    color:rgb(39, 39, 39, 0.4);
+table{
+    position: absolute;
+    top: 450px;
 }
 
-.tengah img{
-    width: 55px;
-    position: relative;
-    top: 10px;
-    left: 20px;
+table tr th{
+    padding: 10px 30px 10px 30px;
+    height: 25px;
+    background-color: #ffc93c;
 }
 
-.tengah ul li {
-    padding: 3px 3px 0 3px;
-    margin: 15px;
-    width: 350px;
-    height: 50px;
+table tr td {
+    padding: 10px ;
     background-color: white;
-    list-style: none;
-    position: relative;
-    top: 10px;
-    left: 0px;
-    box-shadow: 2px 2px 3px rgba(80, 80, 80, 0.3);
-    border-radius: 6px;
-    transition: 0.4s;
+    text-align: center;
 }
 
-body .tengah ul li .active,
-.tengah ul li:hover{
-    background-color: rgba(100, 148, 237, 0.2);
-    border-left: 3px solid #40a8c4;
-}
-
-.tengah ul li a{
-    position: relative;
-    top: 5px;
-    left: 10px;
-    padding: 0px;
-    font-size: 13px;
-    font-family: sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    color: black;
-}
-
-.tengah ul li span{
-    font-size: 11px;
-    font-family: sans-serif;
-    color: rgb(63, 63, 63, 0.7);
-    padding: 10px 0 5px 18px;
-}
 .isi {
-    width: 570px;
+    width: 400px;
     height: 100%;
     padding: 20px;
     position: fixed;
-    top: 70px;
-    right: 15px;
+    top: 50px;
+    right: 0px;
     background-color: white;
-    border-radius: 14px;
     box-shadow: 0 0 3px 3px rgb(79, 79, 80,0.08);
-    overflow: scroll;
     box-sizing: border-box;
 } 
+
 .timeline ul li{
     margin-bottom: 15px;
     width: 350px;
@@ -247,17 +223,15 @@ body .tengah ul li .active,
     background-color: white;
     border-radius: 5px;
     position: relative;
-    top: 100px;
-    left: 60px;
+    top: 20px;
+    right: 35px;
     box-shadow: 3px 3px 3px rgba(156, 156, 156, 0.3);
     padding: 3px;
     list-style: none;
 }
 .timeline ul li:hover{
     background-color: rgba(100, 148, 237, 0.2);
-
 }
-
 
 .timeline ul li h1{
     text-align: center;
@@ -315,4 +289,19 @@ body .tengah ul li .active,
     position: relative;
     top: -180px;
     left: 280px;
+}
+
+.delete{
+    background-color: red;
+    border: none;   
+    padding: 7px 10px 7px 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: rgb(199, 1, 1);
 }
