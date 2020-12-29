@@ -51,6 +51,7 @@ body{
     color: #40a8c4;
     border-bottom: 2px solid #40a8c4;
     padding-bottom: 5px;
+    box-sizing: border-box;
 }
 
 .kiri form .Login:hover{
@@ -93,13 +94,15 @@ body{
     border: none;
     border-radius: 7px;
     box-shadow: 3px 3px 3px rgb(64, 168, 196, 0.4);
-}
-
-.kiri form a{
+    transition: 0.3s;
     font-size: 16px;
     font-weight: 700;
-    text-decoration: none;
     color: white;
+    outline: none;
+}
+
+.kiri form button:hover{
+    background-color: #0689ad;
 }
 
 .kiri form p{
@@ -125,3 +128,22 @@ body{
     right: -660px;
 }
 
+.kiri .textbox #userKosong,
+.kiri .textbox #emailKosong,
+.kiri .textbox #passKosong{
+    margin-top: 5px;
+    width: 300px;
+    font-size: 14px;
+    color: #c62828;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    display: none;
+}
+
+.kiri form #kosong{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgb(199, 19, 19);
+    display: none;
+}
