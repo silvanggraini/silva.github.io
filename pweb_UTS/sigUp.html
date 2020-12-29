@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="header">
+       <img src="logoweb.png" alt="logo" class="logo">
+       <nav>
+           <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="AboutUs.html">About Us</a></li>
+               <li><a href="ContactUs.html">Contact Us</a></li>
+           </ul>
+       </nav>
+    </div>
+    <div class="kiri">
+       <form method="POST" name="signUp" action="home.html" onsubmit="validasi();">
+        <p id="kosong">Mohon diisi bagian yang kosong</p>
+            <a href="sigUp.html" class="SignUp">Sign Up</a>
+            <a href="login.html" class="Login">Login</a>
+            <div class="textbox">
+                <input type="text" placeholder="Username" name="username" id="username">
+                <div id="userKosong">Username kurang dari 6 karakter</div>
+                <br>
+                <input type="email" placeholder="Email" name="email" id="email">
+                <div id="emailKosong">Username kurang dari 9 karakter</div>
+                <br>
+                <input type="password" placeholder="Password" name="password" id="password"> 
+                <div id="passKosong">Username kurang dari 8 karakter</div>
+            </div>
+            <a href="login.html" class="getStarted">get started</a>
+            <p>Already have an account?<a href="login.html"> Sign In</a></p>
+        </form>
+    </div>
+   <div class="kanan">
+       <img src="example-scene-1.png" class="Gambar">
+   </div>
+   <script src="signUp.js"></script>
+</body>
+</html>
