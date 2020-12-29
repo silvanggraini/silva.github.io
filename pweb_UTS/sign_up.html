@@ -16,22 +16,27 @@
        </nav>
     </div>
     <div class="kiri">
-       <form>
+       <form method="POST" name="signUp" action="home.html" onsubmit="validasi();">
+        <p id="kosong">Mohon diisi bagian yang kosong</p>
             <a href="sign_up.html" class="SignUp">Sign Up</a>
             <a href="login.html" class="Login">Login</a>
             <div class="textbox">
-                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Username" name="username" id="username">
+                <div id="userKosong">Username kurang dari 6 karakter</div>
                 <br>
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" name="email" id="email">
+                <div id="emailKosong">Username kurang dari 9 karakter</div>
                 <br>
-                <input type="password" placeholder="Password"> 
+                <input type="password" placeholder="Password" name="password" id="password"> 
+                <div id="passKosong">Username kurang dari 8 karakter</div>
             </div>
-            <button type="submit"><a href="home.html">Get Started</a></button>
+            <button type="submit" class="tombol">Get Started</button>
             <p>Already have an account?<a href="login.html"> Sign In</a></p>
         </form>
     </div>
    <div class="kanan">
        <img src="icon/example-scene-1.png" class="Gambar">
    </div>
+   <script src="signUp.js"></script>
 </body>
 </html>
