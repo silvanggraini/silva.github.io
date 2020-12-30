@@ -48,19 +48,3 @@ password.addEventListener('keyup',function(){
         apalah.setAttribute('href','login.html')
     }
 })
-
-// var diisi = document.querySelector('.kiri form #kosong')
-// function validasi(event) {
-//     if (username.value== 0 || username.value.length < 6) {
-//         diisi.style.display = "block";
-//         return false;
-//     }else if (email.value == 0 || email.value.length < 9) {
-//        diisi.style.display = "block";
-//         return false;
-//     }else if (password.value == 0 || password.value.length < 8) {
-//        diisi.style.display = "block";
-//         return false;
-//     }else{
-//         alert('Sign Up Berhasil');
-//     }
-// }
