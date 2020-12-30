@@ -84,23 +84,25 @@ body{
     box-shadow: 0px 3px 3px rgba(204, 204, 204, 0.4);
 }
 
-.kiri form button{
+.kiri form .masuk{
     position: relative;
-    left: 95px;
-    padding: 10px;
-    width: 120px;
+    left: 105px;
+    padding: 10px 20px 10px 20px ;
+    width: 135px;
     background-color: #40a8c4;
     border: none;
     border-radius: 7px;
     box-shadow: 3px 3px 3px rgb(64, 168, 196, 0.4);
     outline: none;
-}
-
-.kiri form a{
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
     color: white;
+    font-family: sans-serif;
+}
+
+.kiri form .masuk:hover{
+    background-color: #0184a8;
 }
 
 .kiri form p{
@@ -126,3 +128,14 @@ body{
     right: -660px;
 }
 
+.kiri .textbox #userKosong,
+.kiri .textbox #passKosong{
+    margin-top: 5px;
+    width: 300px;
+    font-size: 14px;
+    color: #c62828;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    display: none;
+}
