@@ -95,7 +95,7 @@ nav .div a {
 
 .content h1 {
     font-family: unset;
-    font-size: 50px;
+    font-size: 38px;
     font-weight: 100;
     margin-top: 0;
     margin-bottom: 15px;
@@ -148,7 +148,7 @@ nav .div a {
 
 .navMobile {
     display: none;
-    margin-right: 20px;
+    margin-right: 5px;
     cursor: pointer;
 }
 
@@ -232,4 +232,8 @@ nav .div a {
         margin-left: -50px;
     }
 
+    .content .tombol{
+        width: 165px;
+        height: 35px;
+    }
 }
