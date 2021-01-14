@@ -12,15 +12,10 @@ body{
 .container{
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-rows: 0.5fr 2fr;
-    grid-template-areas: 
-    'nav'
-    'content';
+    display: flex;
 }
 
-.container .header{
-    grid-area: nav;
+.header{
     display: flex;
     justify-content: space-between;
     max-width: 100%;
@@ -28,14 +23,14 @@ body{
     background-color: #40a8c4;
 }
 
-.container .header img{
+.header img{
     display: flex;
-    width: 60px;
+    width: 50px;
     padding: 10px 10px 10px 30px;
     margin: 7px 50px;
 }
 
-.container .header a{
+ .header a{
     display: flex;
     font: 16px 'Poppins',sans-serif;
     font-weight: 500;
@@ -50,19 +45,21 @@ body{
     margin: 5px; */
 }
 
-.container .content{
+.content{
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    min-width: 300px;
 }
 
-.kiri{
-    width: 350px;
-    height: 450px;
-    position: relative;
-    top: 10px;
-    left: 250px;
+.content .kiri{
+    max-width: 560px;
+    min-width: 200px;
+    margin-top: 30px;
+    /* position: relative; */
+    /* top: 10px;
+    left: 250px; */
 }
 
 .kiri h3{
@@ -70,6 +67,8 @@ body{
     padding-top: 10px;
     font-family: sans-serif;
     color: rgb(88, 88, 88);
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .kiri form{
@@ -119,21 +118,22 @@ body{
     text-decoration: none;
 }
 
-.kanan{
-    width: 25%;
-    position: relative;
-    top: -400px;
-    right: -800px;
-    border: 1.6px solid #40a8c4;
-    padding: 3px 3px -2px 3px;
-    border-radius: 10px;
+.content .kanan{
+    width: 35%;
+    height: 60%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1.6px solid #40a8c4;
+    /* padding: 3px; */
+    /* padding: auto; */
+    /* border-radius: 10px; */ 
 }
 
-.kanan img{
-    width: 80%;
+.kanan .Gambar{
+    width: 75%;
     border: 2px solid rgb(97, 97, 97);
-    padding: 20px;
-    margin: 10px;
+    margin: auto;
     border-radius: 10px;
     background: rgb(100, 148, 237, 0.1);
 }
@@ -143,4 +143,16 @@ body{
     font-family: sans-serif;
     text-align: center;
     color: rgb(77, 77, 77);
+}
+
+@media (max-width: 768px) {
+    .content .kanan{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+    .content .kanan{
+        display: none;
+    }
 }
