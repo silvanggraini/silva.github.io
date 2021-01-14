@@ -1,83 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* margin-left: 10px; */
+}
+
 body {
     height: 100%;
     width: 100%;
-    position: relative;
-    top: -20px;
     overflow: hidden;
     background-color: rgb(100, 148, 237, 0.1);
 }
 
-.header {
+nav {
+    display: flex;
     width: 100%;
     height: 15vh;
-    margin: 20px;
+    position: fixed;
+    top: 20px;
+    justify-content: space-between;
+}
+
+nav .nav1{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 85%;
+    margin-right: 20px;
 }
 
-.logo {
-    width: 60px;
+nav .nav1 .logo {
+    width: 5em;
+    height: 1.5em;
     cursor: pointer;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
-nav {
-    flex: 1;
-    padding-left: 60px;
-    margin-left: 670px;
-}
-
-nav ul li {
-    display: inline-block;
+nav .nav1 ul{
+    display: flex;
+    width: 30%;
     list-style: none;
-    margin: 0 20px; 
+    justify-content: space-between;
 }
 
 nav ul li a {
+    /* display: flex;
+    justify-content: flex-end; */
+    text-align: right;
     text-decoration: none;
     color: #000000;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 0.9em;
 }
 
-.button {
+nav .div{
+    display: flex;
     height: 32px;
     width: 65px;
     outline: none;
-    margin-right: 45px;
     background-color: rgba(212, 212, 212, 0.01);
     border: 2px solid #40a8c4;
-    cursor: pointer;
+    cursor: pointer;  
+    margin-right: 40px;
 }
 
-.buton{
+nav .div a {
     font-size: 14px;
     font-family: sans-serif;
     text-decoration: none;
-    position: relative;
-    top: 0px;
-    right: 95px;
     color: #40a8c4;
+    margin: auto;
+    /* align-content: center; */ 
 }
 
-.gambar1{
-    width: 620px;
-    position: absolute;
-    left: 70px;
-    top: 70px;
+.container{
+    width: 100%;
+    padding: 20px;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 'image content';
 }
 
-.kanan{
-    box-sizing: border-box;
-    width: 550px;
-    height: 600px;
-    margin: 5px;
-    position: relative;
-    right: -800px;
-    top: 130px;
+.container .image{
+    grid-area: image;
+    margin-left: 5em;
+    /* min-width: 200px; */
 }
 
-.kanan h1 {
+.content{
+    margin: auto;
+    grid-area: content;
+}
+
+.content h1 {
     font-family: unset;
     font-size: 50px;
     font-weight: 100;
@@ -87,18 +103,19 @@ nav ul li a {
     color: #000000;
 }
 
-.kanan p {
+.content p {
+    width: 80%;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     margin: 8px 5px;
     color: #000000;
     word-spacing: 5px;
     text-align: justify;
 }
 
-.kanan .tombol {
+.content .tombol {
     height: 40px;
-    width: 110px;
+    width: 150px;
     outline: none;
     margin-top: 24px;
     margin-left: 5px;
@@ -108,14 +125,109 @@ nav ul li a {
     font-size: 14px;
     font-family: sans-serif;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 8px;
     box-shadow: 3px 3px 5px rgba(63, 43, 43, 0.4);
 }
 
-.kanan a{
+.content .tombol:hover{
+    background-color: #0086ac;
+    border: 2px solid #0086ac;
+}
+
+.content a{
     font-size: 16px;
     font-family: sans-serif;
     text-decoration: none;
     color: white;
     margin: 3px;
+}
+
+#nav{
+    display: none;
+}
+
+.navMobile {
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.isiNavMobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(2, 110, 139, 0.9);
+    /* display: none; */
+    z-index: 9999;
+    transition: 0.5s;
+}
+
+.isiNavMobile ul li a{
+   color:  #fff;
+   font-weight: 500;
+   text-decoration: none;
+   align-items: none;
+   font-family: sans-serif;
+}
+
+.isiNavMobile ul li{
+    padding: 24px;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+
+.isiNavMobile ul li:hover{
+    background-color: rgb(250, 178, 44);
+}
+
+#nav:checked ~ .isiNavMobile {
+    left: 0;
+}
+
+@media (max-width: 768px){
+    nav .nav1 ul{
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px){
+    body{
+        overflow: scroll;
+    }
+
+     .navMobile{
+        display: block;
+    }
+
+    nav .div{
+        display: none;
+    }
+    nav .nav1 ul{
+        display: none;
+    }
+
+    .container{
+        grid-template-columns: 0.8fr;
+        grid-template-areas: 
+        'content'
+        'image';
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .container h1{
+        width: 50%;
+    }
+
+    .container p{
+        width: 80%;
+    }
+
+    .container .image{
+        margin-left: -50px;
+    }
+
 }
