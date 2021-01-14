@@ -3,7 +3,6 @@ body{
     height: 100%;
     background-color: rgba(228, 228, 228, 0.2);
 }
-
 .header{
     position: fixed;
     top: 0px;
