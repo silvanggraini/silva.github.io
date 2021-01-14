@@ -77,21 +77,25 @@ nav .div a {
     width: 100%;
     padding: 20px;
     margin-top: 3em;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-areas: 'image content';
+    display: flex;
+    min-width: 300px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.container .image{
-    grid-area: image;
-    margin-left: 5em;
-    /* min-width: 200px; */
+.container .image{ 
+    max-width: 560px;
+    min-width: 200px;
+} 
+
+.container .image img{
+    width: 100%;
 }
 
 .content{
-    margin: auto;
-    grid-area: content;
-}
+    width: 40%;
+} 
 
 .content h1 {
     font-family: unset;
@@ -211,13 +215,7 @@ nav .div a {
     }
 
     .container{
-        /* grid-template-columns: 0.8fr; */
-        grid-template-areas: 
-        'content'
-        'image';
-        position: absolute;
-        top: 20px;
-        left: 0px;
+        flex-direction: column-reverse;
     }
 
     .container h1{
@@ -225,11 +223,15 @@ nav .div a {
     }
 
     .container p{
-        width: 80%;
+        width: 90%;
     }
 
     .container .image{
         margin-left: -50px;
+    }
+
+    .content{
+        width: 90%;
     }
 
     .content .tombol{
@@ -240,6 +242,6 @@ nav .div a {
     nav .nav1 .logo{
         position: absolute;
         top: 0px;
-        left: -8px; 
+        left: 10px; 
     }
 }
