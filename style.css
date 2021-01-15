@@ -78,7 +78,7 @@ nav .div a {
     padding: 20px;
     margin-top: 3em;
     display: flex;
-    min-width: 300px;
+    min-width: 200px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -98,6 +98,7 @@ nav .div a {
 } 
 
 .content h1 {
+    width: 100%;
     font-family: unset;
     font-size: 38px;
     font-weight: 100;
@@ -196,12 +197,18 @@ nav .div a {
     nav .nav1 ul{
         width: 50%;
     }
+
+    .content{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 576px){
     body{
         overflow: scroll;
-        margin: -10px;
     }
 
      .navMobile{
@@ -223,7 +230,7 @@ nav .div a {
 
     .container h1{
         width: 50%;
-        font-size: 25px;
+        font-size: 30px;
         margin: 20px 0;
     }
 
