@@ -137,6 +137,7 @@ section{
     font-weight: 700;
     transition: 0.3s;
     margin: auto;
+    cursor: pointer;
 }
 
 .sidebar ul li:hover{
