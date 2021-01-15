@@ -453,6 +453,7 @@ table{
     top: 10px;
     left: 0;
     text-align: center;
+    display: none;
 }
 
 .navMobile {
@@ -500,5 +501,9 @@ table{
 
     .tengah{
         margin-top: 20%;
+    }
+
+    #MenuAtas a{
+        display: block;
     }
 }
