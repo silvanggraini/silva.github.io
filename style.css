@@ -201,6 +201,7 @@ nav .div a {
 @media (max-width: 576px){
     body{
         overflow: scroll;
+        margin: -10px;
     }
 
      .navMobile{
@@ -217,12 +218,13 @@ nav .div a {
 
     .container{
         flex-direction: column-reverse;
-        margin-left: -5px;
+        width: 100%;
     }
 
     .container h1{
         width: 50%;
-        font-size: 30px;
+        font-size: 25px;
+        margin: 20px 0;
     }
 
     .container p{
