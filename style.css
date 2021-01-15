@@ -101,9 +101,9 @@ nav .div a {
     font-family: unset;
     font-size: 38px;
     font-weight: 100;
-    margin-top: 0;
-    margin-bottom: 15px;
-    margin-left: 5px;
+    margin-top: 20px;
+    /* margin-bottom: 15px;
+    margin-left: 5px; */
     color: #000000;
 }
 
@@ -118,7 +118,7 @@ nav .div a {
 }
 
 .content .tombol {
-    height: 40px;
+    height: 50px;
     width: 150px;
     outline: none;
     margin-top: 24px;
@@ -205,6 +205,7 @@ nav .div a {
 
      .navMobile{
         display: block;
+        margin-right: 30px;
     }
 
     nav .div{
@@ -216,10 +217,12 @@ nav .div a {
 
     .container{
         flex-direction: column-reverse;
+        margin-left: -5px;
     }
 
     .container h1{
         width: 50%;
+        font-size: 30px;
     }
 
     .container p{
@@ -235,13 +238,11 @@ nav .div a {
     }
 
     .content .tombol{
-        width: 165px;
-        height: 35px;
+        width: 150px;
+        height: 50px;
     }
 
     nav .nav1 .logo{
-        position: absolute;
-        top: 0px;
-        left: 10px; 
+        margin-left: 20px;
     }
 }

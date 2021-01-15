@@ -23,7 +23,7 @@ nav .navWeb ul{
     display: flex;
     width: 30%;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 nav .navWeb  ul li a {
@@ -35,7 +35,7 @@ nav .navWeb  ul li a {
 
 nav .navWeb  img{
     width: 4em;
-    height: 1em;
+    height: 1.2em;
     padding: 10px 10px 10px 30px;
     margin: 7px 50px;
 }
@@ -246,6 +246,10 @@ section{
     nav .navWeb ul{
         width: 50%;
     }
+
+    .navWeb{
+        margin-left: -20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -253,8 +257,13 @@ section{
         display: none;
     }
 
+    .navWeb{
+        margin-left: -40px;
+    }
+
     .navMobile {
         display: block;
+        margin-right: 30px;
     }
 
     section{
