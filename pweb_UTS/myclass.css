@@ -1,44 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     width: 100%;
     height: 100%;
-    background-color: rgba(228, 228, 228, 0.2);
+    background-color:white;
 }
 
 .header{
-    position: fixed;
+    position: absolute;
     top: 0px;
     right: 0px;
     width: 100%;
     height: 50px;
     background-color: #40a8c4;
     box-shadow: 0 3px 3px  rgba(100, 148, 237, 0.2);
-    z-index: 999;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px;
 }
 
-.header h1{
-    margin: 10px;
-    padding: 5px;
+nav .header .MS{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+} 
+
+.header .MS h1{
+    /* margin: 10px;  */
+    padding: 5px; 
     font-size: 24px;
     font-family: sans-serif;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.6);
-}
+} 
 
-.header .search{
-    margin: 13px;
-    position: fixed;
-    top: 0;
-    left: 250px;
-    width: 150px;
+/* .header .MS .search{
+    width: 100%;
     height: 25px;
     border:1.5px solid #40a8c4;
     border-radius: 15px;
     background-color: white;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
 }
 
-.header .search input{
-    margin-left: 30px;
-    width: 90px;
+.header .search input{ 
+    /* margin-left: 30px; 
+    width: 100%;
     height: 23px;
     outline: none;
     border-radius: 8px;
@@ -47,254 +62,252 @@ body{
 
 .header .search img{
     width: 30px;
-    position: relative;
-    top: -28px;
-    left: 0px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+} */
+
+.header .HL{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.header a{
+.header .HL .logo{
+    width: 30%;
+}
+
+.header a{ 
     font-size: 16px;
     font-family: sans-serif;
     text-decoration: none;
     color: black;
-    position: relative;
-    top: -37px;
-    right: -1100px;
     font-weight: 700;
 }
 
+.header a:hover{
+    color:#FFC93c;
+}
+
 .header .logo{
-    width: 60px;
-    position: relative;
-    top: -34px;
-    right: -1180px;
+    width: 20px;
+    height: 20px;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .sidebar{
-    width: 230px;
-    height: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    width: 18%;
+    height: auto;
     background-color: white;
     box-shadow: 2px 0 3px rgba(66, 66, 66, 0.2);
+    /* z-index: 999999; */
+    padding-top: 60px;
+    box-sizing: border-box;
+    /* display: none; */
+}
+
+.sidebar ul{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .sidebar ul li{
-    position: relative;
-    left: -25px;
-    top: 60px;
-    width: 200px;
-    height: 33px;
-    margin: 10px;
+    width: 90%;
+    display: flex;
+    height: 35px;
     list-style: none;
     border-radius: 30px;
     transition: 0.3s;
-}
-
-.sidebar ul li:hover{
-    background-color: #40a8c4;
-}
-
-.sidebar ul li a:hover{
-    color: white;
-}
-
-.sidebar ul li a{
+    align-items: center;
     font-size: 14px;
     font-family: sans-serif;
     text-decoration: none;
     color: rgb(59, 59, 59);
     font-weight: 700;
     transition: 0.3s;
+    margin: auto;
 }
 
-.sidebar ul li img{
-    position: relative;
-    top: 5px;
-    width: 21px;
-}
-
-
-.sidebar a{
-    text-decoration: none;
-    font-size: 14px;
-    font-family: sans-serif;
-    color: black;
-    font-weight: 700;
+.sidebar ul li:hover{
+    background-color: #40a8c4;
+    height: 35px;
+    color: white;
 }
 
 .sidebar img{
-    width: 18px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .tengah {
-    position: absolute;
-    top: 10px;
-    left: 190px;
-    width: 300px;
+    width: 50%;
     height: 100%;
-}
-
-.tengah h2{
-    margin-top: 85px;
-    margin-left: 80px;
-    font-size: 23px;
-    font-family: sans-serif;
-    font-weight: 700;
-}
-
-.tengah p{
-    margin-top: -20px;
-    font-size: 11px;
-    font-family: sans-serif;
-    font-weight: 700;
-    color:rgb(39, 39, 39, 0.4);
-}
-
-.tengah img{
-    width: 90px;
-    position: relative;
-    top: -87px;
-    left: 230px;
-}
-
-.tengah ul li {
-    padding: 3px 3px 0 3px;
-    margin: 15px;
-    width: 200px;
-    height: 50px;
-    background-color: white;
-    list-style: none;
-    position: relative;
-    top: -90px;
-    left: -40px;
-    box-shadow: 2px 2px 3px rgba(80, 80, 80, 0.3);
-    border-radius: 6px;
-    transition: 0.3s;
-}
-
-.tengah ul li:hover{
-    background-color: rgba(100, 148, 237, 0.2);
-    border-left: 3px solid #40a8c4;
-}
-
-.tengah a{
-    position: relative;
-    top: 0px;
-    left: 275px;
-    padding: 5px;
-}
-
-.tengah a img {
-    width: 100px;
-}
-
-.tengah ul li span{
-    font-size: 11px;
-    font-family: sans-serif;
-    color: rgb(63, 63, 63, 0.7);
-    padding: 10px 0 5px 18px;
-}
-
-table{
-    width: 650px;
-    margin-top: 30px;
-    margin-left: 75px;
- }
- 
- table th {
-     position: relative;
-     padding: 10px 30px 10px 10px;
-     border: 2px solid #FFC93c;
-     background-color: #FFC93c;
-     border-top-left-radius: 6px;
-     border-top-right-radius: 6px;
- }
-
- table td{
-     background-color: white;
-     padding-top: 10px;
-     text-align: center;
-     padding-bottom: 10px;
- }
-
-.isi {
-    width: 400px;
-    height: 100%;
-    position: fixed;
-    padding: 10px 10px;
-    top: 50px;
-    right: 0px;
-    background-color: white;
-    box-shadow: 0 0 3px 3px rgb(79, 79, 80,0.08);
+    /* background-color: rgb(46, 190, 226); */
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
     box-sizing: border-box;
 }
 
-.isi h1{
+.tengah h2{
+    font-size: 23px; 
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tengah form{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 1px rgb(138, 137, 137, .3);
+}
+
+.tengah input{
+    width: 95.5%;
+    height: 30px;
+    border: gray solid 1.8px;
+    margin: 10px ;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px;
+
+}
+
+.tengah .tombol{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tengah .reset, .tengah .button{
+    height: 40px;
+    background-color: #40a8c4;
+    border: none;
+    box-shadow: 0px 4px 8px 1px rgb(138, 137, 137, .5);
+    color: white;
+    font-size: 700;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tengah .reset:hover{
+    background-color: #0e84a5;
+}
+
+.tengah .button:hover{
+    background-color: #0e84a5;
+}
+
+
+table{
+    width: 90%;
+    text-align: center;
+    margin: 5% auto;
+}
+
+#daftarKelas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+ 
+ table th {
+    width: 60%;
+    border: 2px solid #FFC93c;
+    background-color: #FFC93c;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; 
+    height: 40px;
+}
+
+ table td{
+     background-color:  rgba(231, 230, 230, 0.5);
+     padding: 10px;
+ } 
+
+.isi{
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 0 3px 3px rgb(79, 79, 80,0.08);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2%;
+}
+
+.isi h1{ 
     font-size: 23px;
     padding-top: 20px;
     font-family: sans-serif;
 }
 
 .isi h3{
-    position: relative;
-    top: -10px;
     font-size: 15px;
     font-family: sans-serif;
     font-weight: 500;
 }
 
 .timeline{
-    position: absolute;
-    top: 20px;
-    right: 80px;
+    width: 100%;
+    /* display: flex; */
 }
 
+/* .timeline ul{
+    display: flex;
+    flex-direction: column;
+} */
+
 .timeline ul li{
-    margin-bottom: 25px;
-    width: 350px;
-    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    width: 100%;
     background-color: white;
     border-radius: 5px;
-    position: relative;
-    top: 100px;
-    left: 60px;
     box-shadow: 3px 3px 3px rgba(156, 156, 156, 0.3);
-    padding: 3px;
+    padding: 5px;
     list-style: none;
 }
 
 .timeline ul li h1{
-    text-align: center;
-    margin: 2px;
-    width: 40px;
-    padding-top: 10px;
+   padding: 12px;
     box-sizing: border-box;
-    height: 40px;
+    width: 40px;
+    height: 40px; 
     font-size: 16px;
     font-family: sans-serif;
     background-color: #ffc93c;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .timeline ul li h4{
     font-weight: 100;
     font-size: 13px;
     font-family: sans-serif;
-    position: relative;
-    top: -50px;
-    left: 50px;
 }
 
 .timeline ul li span{
     font-weight: 100;
     font-size: 12px;
     font-family: sans-serif;
-    position: relative;
-    top: -71px;
-    left: 50px;
     color: rgb(126, 126, 126);
 }   
 
@@ -302,97 +315,34 @@ table{
     font-weight: 100;
     font-size: 13px;
     font-family: sans-serif;
-    position: relative;
-    top: -85px;
-    left: 200px;
 } 
 
 .timeline ul li p{
     font-weight: 100;
     font-size: 12px;
     font-family: sans-serif;
-    position: relative;
-    top: -143px;
-    left: 190px;
     color: rgb(126, 126, 126);
 } 
 
 .timeline ul li img{
-    width: 20px;
-    position: relative;
-    top: -124px;
-    left: 290px;
+    width: 20px
 }
 
 .timeline ul li:hover{
     background-color: rgba(100, 148, 237, 0.2);
 }
 
-.tengah form {
-    background-color: white;
-    margin-left: 75px;
-    width: 640px;
-    height: 300px;    
-    font-family: sans-serif;
-    padding-left: 5px;
-    padding-top: 20px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    box-shadow: 0 0 3px 4px rgb(184, 184, 184, 0.09);
-}
-
 .tengah form label{
     font-weight: 500;
     font-size: 16px;
-    padding-left: 5px;
-    padding-top: 5px;
-    margin-left: 35px;
-    margin-bottom: 20px;  
     font-family: sans-serif;
 }
-
-.tengah form #hari, .tengah form #mataKuliah, .tengah form #jam{
-    height: 30px;
-    width: 550px;
-    margin-bottom: 10px;
-    margin-left: 35px;
-    border: 1.5px solid rgb(51, 50, 50,0.5);
-    border-radius: 5px;
-    outline: none;
-}
-
-.tengah form .button, .tengah form .reset{
-    margin-top: 15px;
-    margin-left: 15px;
-    position: relative;
-    left: 19px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    width: 270px;
-    height: 40px;
-    background-color: rgb(64, 168, 196,0.8);
-    border: none;
-    border-radius: 4px;
-    box-shadow: 3px 3px 3px rgba(114, 114, 114, 0.2);
-    cursor: pointer;
-    outline: none;
-}
-
-.tengah form .reset:hover{
-    background-color: rgb(64, 168, 196);
-}
-
-.tengah form .button:hover{
-    background-color: rgb(64, 168, 196);
-}
-
 
 .delete{
+    width: 80px;
+    height: 30px;
     background-color: red;
     border: none;   
-    padding: 7px 10px 7px 10px;
     color: rgb(0, 0, 0);
     font-weight: 500;
     border-radius: 3px;
@@ -402,4 +352,153 @@ table{
 
 .delete:hover{
     background-color: rgb(199, 1, 1);
+} 
+
+#nav{
+    display: none;
+}
+
+.isiNavMobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(2, 110, 139, 0.9);
+    z-index: 9999;
+    transition: 0.5s;
+}
+
+.isiNavMobile ul{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.isiNavMobile ul li a{
+   color: #fff;
+   font-weight: 500;
+   text-decoration: none;
+   font-family: sans-serif;
+}
+
+.isiNavMobile ul li{
+    list-style: none;
+    padding: 24px;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+
+.isiNavMobile ul li:hover{
+    background-color: rgb(250, 178, 44);
+}
+
+.isiNavMobile ul li .cari{
+    width: 70%;
+    height: 25px;
+    border:1.5px solid #40a8c4;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.isiNavMobile ul li  .cari input{ 
+    /* margin-left: 30px; */
+    width: 100%;
+    height: 23px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+}
+
+.isiNavMobile ul li  .cari img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* #MenuAtas{
+    margin: 15px auto;
+    width: 90%;
+    height: 75px;
+    background-color: rgba(236, 236, 236, 0.4);
+    box-shadow: 0 3px 10px 1px rgba(153, 153, 153, 0.3);
+    border-radius: 17px;
+}
+
+#MenuAtas img{
+    position: relative;
+    top: 27px;
+    left: 75px;
+    width: 95px;
+    height: 30px;
+/* } */
+
+#MenuAtas a{
+    display: block; 
+    background-color: #313d3f;
+    width: 15%;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px; 
+    margin: 10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+}
+
+.navMobile {
+    display: none;
+    cursor: pointer;
+    z-index: 99999;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+#nav:checked ~ .isiNavMobile {
+    left: 0;
+}
+
+@media (max-width : 576px) {
+    section{
+        display: flex;
+        justify-content: center;
+    }
+    .navMobile {
+        display: block;
+        margin-right: 30px;
+    }
+
+    nav .header{
+        display: none;
+    }
+
+    .isi{
+        display: none;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .tengah{
+        width: 85%;
+    }
+
+    #MenuAtas{
+        display: block;
+    }
+
+    .tengah{
+        margin-top: 20%;
+    }
 }

@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 20px;
+}
+a{
+    margin-left: 20px;
+}
+
+.isi h1{ 
+    width: 100%;
+    font-size: 23px;
+    padding-top: 20px;
+    font-family: sans-serif;
+    text-align: center; 
+}
+
+.isi h3{
+    width: 100%;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.timeline{
+    width: 100%;
+}
+
+.timeline ul{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.timeline ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(156, 156, 156, 0.3);
+    padding: 5px;
+    list-style: none;
+}
+
+.timeline ul li h1{
+    padding: 12px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px; 
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #ffc93c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline ul li h4{
+    font-weight: 100;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.timeline ul li span{
+    font-weight: 100;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: rgb(126, 126, 126);
+}   
+
+.timeline ul li h5{
+    font-weight: 100;
+    font-size: 13px;
+    font-family: sans-serif;
+} 
+
+.timeline ul li p{
+    font-weight: 100;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: rgb(126, 126, 126);
+} 
+
+.timeline ul li img{
+    width: 20px
+}
+
+.timeline ul li:hover{
+    background-color: rgba(100, 148, 237, 0.2);
+}
+
+.tengah form label{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: sans-serif;
+}

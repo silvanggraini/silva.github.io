@@ -15,7 +15,7 @@ function inputData(){
     
         cel1.innerHTML = matakuliah;
         cel2.innerHTML = jam;
-        cell3.innerHTML = '<input type="button" value="Delete" onclick="deleteData()" class="delete">'
+        cell3.innerHTML = '<button onclick="deleteData()" class="delete">Delete</button>'
     }
 
     if (hari == 'Tuesday') {
@@ -27,7 +27,7 @@ function inputData(){
 
         Tuesday1.innerHTML = matakuliah;
         Tuesday2.innerHTML = jam;
-        Tuesday3.innerHTML = '<input type="button" value="Delete" onclick="deleteData1()" class="delete">'  
+        Tuesday3.innerHTML = '<button onclick="deleteData1()" class="delete">Delete</button>'  
     } 
 
     if (hari == 'Wednesday') {
@@ -39,7 +39,7 @@ function inputData(){
 
         w1.innerHTML = matakuliah;
         w2.innerHTML = jam;
-        w3.innerHTML = '<input type="button" value="Delete" onclick="deleteData2()" class="delete">'  
+        w3.innerHTML = '<button onclick="deleteData2()" class="delete">Delete</button>'  
     } 
   
     if (hari == 'Thursday') {
@@ -51,7 +51,7 @@ function inputData(){
 
         Thurday1.innerHTML = matakuliah;
         Thurday2.innerHTML = jam;
-        Thurday3.innerHTML = '<input type="button" value="Delete" onclick="deleteData3()" class="delete">'  
+        Thurday3.innerHTML = '<button onclick="deleteData3()" class="delete">Delete</button>'  
     } 
 
     if (hari == 'Friday') {
@@ -63,7 +63,7 @@ function inputData(){
 
         Friday1.innerHTML = matakuliah;
         Friday2.innerHTML = jam;
-        Friday3.innerHTML = '<input type="button" value="Delete" onclick="deleteData4()" class="delete">'  
+        Friday3.innerHTML = '<button onclick="deleteData4()" class="delete">Delete</button>'  
     } 
 }
 

@@ -5,195 +5,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Classes</title>
     <link rel="stylesheet" href="myclass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <div class="header">
-        <h1>My Room</h1>
-        <div class="search">
-            <input type="text" class="input" placeholder="searching"><img src="icon/Search4.png" alt="search">
-        </div>
-        <a href="home.html">Home</a>
-        <img src="logoweb.png" alt="logo" class="logo">
+    <div id="MenuAtas">
+        <a href="today.html">Today</a>
+        <!-- <img src="logoweb.png" alt="logo" class="logo2"> --> 
     </div>
-    <div class="sidebar">
+    <input type="checkbox" id="nav">
+    <div class="isiNavMobile">
         <ul>
-            <li><a href="mybook0.html"><img src="icon/Folder.svg" alt="buku">My Books</a></li>
-            <li><a href="myassignment.html"><img src="icon/Document.svg" alt="tugas">My Assignments</a></li>
-            <li><a href="myclass.html"><img src="icon/Video.svg" alt="tugas">My Classes</a></li>
+            <li>
+                <div class="cari">
+                    <img src="icon/Search4.png" alt="search">
+                    <input type="text" class="input" placeholder="searching">
+                </div>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="mybook0.html">My Books</li>
+            <li><a href="myassignment.html">My Assignments</li>
+            <li><a href="myclass.html">My Classes</li>
         </ul>       
     </div>
-    <div class="tengah">
-        <h2>Atur kelasmu di sini</h2>
-        <form name="inputan" method="POST" action="myclass.html">
-            <label for="hari">Hari :</label>
-            <br>
-            <input type="text" placeholder="Hari" id="hari" name="hari">
-            <label for="Matakuliah">Matakuliah :</label>
-            <br>
-            <input type="text" placeholder="Matakuliah" id="mataKuliah" name="mataKuliah">
-            <label for="Jam">Jam :</label>
-            <br>
-            <input type="text" placeholder="Jam" id="jam" name="jam">
-            <br>
-            <input  type="button" value="Tambah" onclick="inputData()" class="button">
-            <input type="reset" value="Reset" class="reset">
-        </form>
-        <table id="daftarKelas">
-            <table class="Monday">
+    <nav>
+        <div class="header">
+            <div class="MS">
+                <h1>My Room</h1>
+                <!-- <div class="search">
+                    <img src="icon/Search4.png" alt="search">
+                    <input type="text" class="input" placeholder="searching">
+                </div> -->
+            </div>
+            <div class="HL">
+                <a href="home.html">Home</a>
+                <img src="logoweb.png" alt="logo" class="logo">
+            </div>
+        </div>
+        <div class="menuHum">
+            <label for="nav" class="navMobile"><i class="fas fa-bars fa-2x"></i></label>
+        </div>
+    </nav>
+    <section>
+        <div class="sidebar">
+            <ul>
+                <li><a href="mybook0.html"></a><img src="icon/Folder.svg" alt="buku">My Books</li>
+                <li><a href="myassignment.html"></a><img src="icon/Document.svg" alt="tugas">My Assignments</li>
+                <li><a href="myclass.html"></a><img src="icon/Video.svg" alt="tugas">My Classes</li>
+            </ul>       
+        </div>
+        <div class="tengah">
+            <h2>Atur kelasmu di sini</h2>
+            <form name="inputan" method="POST" action="myclass.html">
+                <label for="hari">Hari :</label>
+                <br>
+                <input type="text" placeholder="Hari" id="hari" name="hari">
+                <label for="Matakuliah">Matakuliah :</label>
+                <br>
+               <input type="text" placeholder="Matakuliah" id="mataKuliah" name="mataKuliah">
+               <br>
+                <label for="Jam">Jam :</label>
+                <br>
+                <input type="text" placeholder="Jam" id="jam" name="jam">
+                <br>
+                <div class="tombol">
+                    <input  type="button" value="Tambah" onclick="inputData()" class="button">
+                    <input type="reset" value="Reset" class="reset">
+                </div>
+            </form>
+            <table id="daftarKelas">
+                <table class="Monday">
+                        <tr>
+                            <th colspan="3">Monday</th>
+                        </tr>
+                        <tr>
+                            <td>Kecerdasan Buatan</td>
+                            <td>07.30-08.40</td>
+                            <td><button onclick="deleteData()" class="delete">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Multi Media Dalam Jaringan</td>
+                            <td>08.50-10.30</td>
+                            <td><button onclick="deleteData()" class="delete">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pemograman SQL</td>
+                            <td>12.30-14.10</td>
+                            <td><button onclick="deleteData()" class="delete">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pratikum MM</td>    
+                            <td>18.00-20.40</td>
+                            <td><button onclick="deleteData()" class="delete">Delete</button></td>
+                        </tr>
+                </table>
+                <table class="Tuesday">
                     <tr>
-                        <th colspan="3">Monday</th>
+                        <th colspan="3">Tuesday</th>
+                    </tr>
+                    <tr>
+                        <td>Administrasi Sistem</td>
+                        <td>08.50-10.30</td>
+                        <td><button onclick="deleteData1()" class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Desain Dan Analisis Algoritma</td>
+                        <td>10.40-12.20</td>
+                        <td><button onclick="deleteData1()" class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>PBO 1</td>
+                        <td>14.20-16.00</td>
+                        <td><button onclick="deleteData1()" class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pratikum DAA</td>
+                        <td>18.00-20.40</td>
+                        <td><button onclick="deleteData1()" class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pratikum DAA</td>
+                        <td>18.00-20.40</td>
+                        <td><button onclick="deleteData1()" class="delete">Delete</button></td>
+                    </tr>
+                </table>
+                <table class="Wednesday">
+                    <tr>
+                        <th colspan="3">Wednesday</th>
+                    </tr>
+                    <tr>
+                        <td>Perancangan Website</td>
+                        <td>08.50-10.30</td>
+                        <td><button onclick="deleteData2()" class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Riset Operasi</td>
+                        <td>10.50-12.00</td>
+                        <td><button onclick="deleteData2()" class="delete">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Kecerdasan Buatan</td>
                         <td>07.30-08.40</td>
-                        <td><button onclick="deleteData()" class="delete">Delete</button></td>
+                        <td><button onclick="deleteData2()" class="delete">Delete</button></td>
                     </tr>
                     <tr>
-                        <td>Multi Media Dalam Jaringan</td>
-                        <td>08.50-10.30</td>
-                        <td><button onclick="deleteData()" class="delete">Delete</button></td>
+                        <td>Kecerdasan Buatan</td>
+                        <td>07.30-08.40</td>
+                        <td><button onclick="deleteData2()" class="delete">Delete</button></td>
+                    </tr>
+                </table>
+                <table class="Thursday">
+                    <tr>
+                        <th colspan="3">Thursday</th>
                     </tr>
                     <tr>
-                        <td>Pemograman SQL</td>
-                        <td>12.30-14.10</td>
-                        <td><button onclick="deleteData()" class="delete">Delete</button></td>
+                        <td>Kecerdasan Buatan PR</td>
+                        <td>09.40-12.20</td>
+                        <td><button onclick="deleteData3()" class="delete">Delete</button></td>
                     </tr>
                     <tr>
-                        <td>Pratikum MM</td>    
-                        <td>18.00-20.40</td>
-                        <td><button onclick="deleteData()" class="delete">Delete</button></td>
+                        <td>Pemograman SQL PR</td>
+                        <td>12.30-15.10</td>
+                        <td><button onclick="deleteData3()" class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>PBO 1 PR</td>
+                        <td>15.10-17.50</td>
+                        <td><button onclick="deleteData3()" class="delete">Delete</button></td>
+                    </tr>
+                </table>
+                <table class="Friday">
+                    <tr>
+                        <th colspan="3">Friday</th>
+                    </tr>
+                    <tr>
+                        <td>Kecerdasan Buatan PR</td>
+                        <td>09.40-12.20</td>
+                        <td><button onclick="deleteData4()" class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pemograman SQL PR</td>
+                        <td>12.30-15.10</td>
+                        <td><button onclick="deleteData4()" class="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>PBO 1 PR</td>
+                        <td>15.10-17.50</td>
+                        <td><button onclick="deleteData4()" class="delete">Delete</button></td>
                     </tr>
             </table>
-            <table class="Tuesday">
-                <tr>
-                    <th colspan="3">Tuesday</th>
-                </tr>
-                <tr>
-                    <td>Administrasi Sistem</td>
-                    <td>08.50-10.30</td>
-                    <td><button onclick="deleteData1()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Desain Dan Analisis Algoritma</td>
-                    <td>10.40-12.20</td>
-                    <td><button onclick="deleteData1()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>PBO 1</td>
-                    <td>14.20-16.00</td>
-                    <td><button onclick="deleteData1()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Pratikum DAA</td>
-                    <td>18.00-20.40</td>
-                    <td><button onclick="deleteData1()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Pratikum DAA</td>
-                    <td>18.00-20.40</td>
-                    <td><button onclick="deleteData1()" class="delete">Delete</button></td>
-                </tr>
             </table>
-            <table class="Wednesday">
-                <tr>
-                    <th colspan="3">Wednesday</th>
-                </tr>
-                <tr>
-                    <td>Perancangan Website</td>
-                    <td>08.50-10.30</td>
-                    <td><button onclick="deleteData2()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Riset Operasi</td>
-                    <td>10.50-12.00</td>
-                    <td><button onclick="deleteData2()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Kecerdasan Buatan</td>
-                    <td>07.30-08.40</td>
-                    <td><button onclick="deleteData2()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                     <td>Kecerdasan Buatan</td>
-                    <td>07.30-08.40</td>
-                    <td><button onclick="deleteData2()" class="delete">Delete</button></td>
-                </tr>
-            </table>
-            <table class="Thursday">
-                <tr>
-                    <th colspan="3">Thursday</th>
-                </tr>
-                <tr>
-                    <td>Kecerdasan Buatan PR</td>
-                    <td>09.40-12.20</td>
-                    <td><button onclick="deleteData3()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Pemograman SQL PR</td>
-                    <td>12.30-15.10</td>
-                    <td><button onclick="deleteData3()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>PBO 1 PR</td>
-                    <td>15.10-17.50</td>
-                    <td><button onclick="deleteData3()" class="delete">Delete</button></td>
-                </tr>
-            </table>
-            <table class="Friday">
-                <tr>
-                    <th colspan="3">Friday</th>
-                </tr>
-                <tr>
-                    <td>Kecerdasan Buatan PR</td>
-                    <td>09.40-12.20</td>
-                    <td><button onclick="deleteData4()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Pemograman SQL PR</td>
-                    <td>12.30-15.10</td>
-                    <td><button onclick="deleteData4()" class="delete">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>PBO 1 PR</td>
-                    <td>15.10-17.50</td>
-                    <td><button onclick="deleteData4()" class="delete">Delete</button></td>
-                </tr>
-        </table>
-        </table>
-    </div>
-    <div class="isi">
-        <h1> Kelas hari ini </h1>
-        <h3> Wednesday,14 October </h3>
-        <div class="timeline">
-            <ul>
-                <li><h1>PW</h1>
-                    <h4>Perancangan Website</h4>
-                    <h5>08.50-10.30</h5>
-                    <img src="icon/bell.svg" alt="bell">
-                </li>
-                <li><h1>AK</h1>
-                    <h4>Arsitektur Komputer</h4>
-                    <h5>10.40-12.20</h5>
-                    <img src="icon/bell.svg" alt="bell">
-                </li>
-                <li><h1>RP</h1>
-                    <h4>Riset Operasi</h4>
-                    <h5>12.30-14.10</h5>
-                    <img src="icon/bell.svg" alt="bell">
-                </li>
-                <li><h1>KB</h1>
-                    <h4>Kecerdasan Buatan</h4>
-                    <h5>16.10-17.50</h5>
-                    <img src="icon/bell.svg" alt="bell">
-                </li>
-                <li><h1>MM</h1>
-                    <h4>Multimedia</h4>
-                    <h5>18.00-20.40</h5>
-                    <img src="icon/bell.svg" alt="bell">
-                </li>
-            </ul>
         </div>
-    </div>
+        <div class="isi">
+            <h1> Kelas hari ini </h1>
+            <h3> Wednesday,14 October </h3>
+            <div class="timeline"> 
+                <ul>
+                    <li><h1>PW</h1>
+                        <h4>Perancangan Website</h4>
+                        <h5>08.50-10.30</h5>
+                        <img src="icon/bell.svg" alt="bell">
+                    </li>
+                    <li><h1>AK</h1>
+                        <h4>Arsitektur Komputer</h4>
+                        <h5>10.40-12.20</h5>
+                        <img src="icon/bell.svg" alt="bell">
+                    </li>
+                    <li><h1>RP</h1>
+                        <h4>Riset Operasi</h4>
+                        <h5>12.30-14.10</h5>
+                        <img src="icon/bell.svg" alt="bell">
+                    </li>
+                    <li><h1>KB</h1>
+                        <h4>Kecerdasan Buatan</h4>
+                        <h5>16.10-17.50</h5>
+                        <img src="icon/bell.svg" alt="bell">
+                    </li>
+                    <li><h1>MM</h1>
+                        <h4>Multimedia</h4>
+                        <h5>18.00-20.40</h5>
+                        <img src="icon/bell.svg" alt="bell">
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </section>
     <script src=myclass.js></script>
 </body>
 </html>
